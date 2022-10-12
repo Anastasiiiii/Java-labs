@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class lab_2 {
     public static void main(String args[])
     {
