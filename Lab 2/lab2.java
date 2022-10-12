@@ -30,6 +30,15 @@ public class lab_2 {
             }
             System.out.println();
         }
+        float sum;
+        for(int j = 0; j < matrix[0].length; j++){
+            sum = 0.0f;
+            for(int i = 0; i < matrix.length; i++){
+                sum = sum + matrix[j][i];
+            }
+            float average = sum/matrix.length;
+            System.out.println("Середнє значення елементів " + j + " рядка: " + average);
+        }
     }
 
 }
