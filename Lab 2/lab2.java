@@ -1,4 +1,8 @@
 public class lab_2 {
+    //0426 - номер залікової книжки. 
+    //C5 = 1, тому початкову матрицю треба транспонувати.
+    //C7 = 6, тому тип елементів матриці має бути float.
+    //C11 = 8, тому потрібно знайти середнє значення елементів кожного рядка.
     public static void main(String args[])
     {
         float [][] a = {
@@ -31,7 +35,7 @@ public class lab_2 {
         }
         float sum;
         for(int j = 0; j < matrix[0].length; j++){
-            sum = 0.0f;
+            sum = 0.0F;
             for(int i = 0; i < matrix.length; i++){
                 sum = sum + matrix[j][i];
             }
