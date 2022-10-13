@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
 public class sumCount {
+    //0426 - номер залікової книжки.
+    //C2 = 0, тому операція О1 = +.
+    //C3 = 0, тому С = 0.
+    //C5 = 1, тому О2 = /.
+    //C7 = 6, тому тип індексів i та j double.
     public static void main(String[] args) {
         int m = 2, n = 3;
         double b = 1.2, a = 2.3;
