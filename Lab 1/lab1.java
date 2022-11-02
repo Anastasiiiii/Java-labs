@@ -6,14 +6,11 @@ public class sumCount {
     //C3 = 0, тому С = 0.
     //C5 = 1, тому О2 = /.
     //C7 = 6, тому тип індексів i та j double.
-    
-   
-    
     public static void main(String[] args) {
         int m, n;
         double a;
         double b;
-        int S = 0;
+        double S = 0;
         
          Scanner in = new Scanner(System.in);
 
