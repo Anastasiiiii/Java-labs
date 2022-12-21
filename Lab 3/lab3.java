@@ -10,7 +10,9 @@ public class lab3 {
             String subStr [] = text.toString().split("[.!?]");
             
             int arr[] = new int[subStr.length];
-            int arr2[] = new int[subStr.length];    
+            int arr2[] = new int[subStr.length];  
+                
+            int min = 0, tt = 0, index = 0;
             
             for (int i = 0; i <= subStr.length - 1; i++) {
                 System.out.println("Слова, що були у речені:");
@@ -30,6 +32,30 @@ public class lab3 {
             Arrays.sort(arr);
             for (int i = 0; i < arr.length; i++) {
                 System.out.println(arr[i]);
+            }
+               
+            for (int i = 0; i <= arr.length - 1; i++) {
+                min = arr[i];
+                index = i;
+                for (int j = i + 1; j <= arr.length - 1; j++) {
+                    if (min > arr[j]) {
+                        min = arr[j];
+                        index = j;
+                    }
+                }
+                if (index != i) {
+                    tt = arr[i];
+                    arr[i] = arr[index];
+                    arr[index] = tt;
+                }
+            }
+
+            for (int i = 0; i <= arr.length - 1; i++) {
+                for (int j = 0; j <= arr.length - 1; j++) {
+                    if (arr[i] == arr2[j]) {
+                        System.out.println(subStr[j]);
+                    }
+                }
             }
 
         }
