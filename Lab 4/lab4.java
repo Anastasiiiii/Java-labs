@@ -48,6 +48,16 @@ public class lab4 {
         
         System.out.println();
         
+        Arrays.sort(furniture, Comparator.comparingInt(Furniture::getPrice));
+        for(int i = 0; i < furniture.length; i++) {
+            System.out.println( "Назва:" + " " + furniture[i].name + " " + "|" +
+                    "Матеріали:" + " " + furniture[i].materials + " " + "|" +
+                    "Призначення:" + " " + furniture[i].recognition + " " + "|" +
+                    "Ціна:" + " " + furniture[i].price + " " + "|" +
+                    "Серійний номер:" + " " + furniture[i].serialNumber + " " + "|" +
+                    "Кількість замовлень:" + " " + furniture[i].amountOfOrders);
+        }
+        
         Arrays.sort(furniture, Comparator.comparing(Furniture::getAmountOfOrders).reversed());
         for(int i = 0; i < furniture.length; i++) {
             System.out.println( "Назва:" + " " + furniture[i].name + " " + "|" +
