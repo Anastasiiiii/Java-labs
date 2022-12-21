@@ -35,9 +35,21 @@ public class lab4 {
                     new Furniture("wardrobe", "wood and glass", "bedroom", 2816, 37484940, 7)
             };
 
-            System.out.println();
+        System.out.println();
 
         for (int i = 0; i < furniture.length; i++) {
+            System.out.println( "Назва:" + " " + furniture[i].name + " " + "|" +
+                    "Матеріали:" + " " + furniture[i].materials + " " + "|" +
+                    "Призначення:" + " " + furniture[i].recognition + " " + "|" +
+                    "Ціна:" + " " + furniture[i].price + " " + "|" +
+                    "Серійний номер:" + " " + furniture[i].serialNumber + " " + "|" +
+                    "Кількість замовлень:" + " " + furniture[i].amountOfOrders);
+        }
+        
+        System.out.println();
+        
+        Arrays.sort(furniture, Comparator.comparing(Furniture::getAmountOfOrders).reversed());
+        for(int i = 0; i < furniture.length; i++) {
             System.out.println( "Назва:" + " " + furniture[i].name + " " + "|" +
                     "Матеріали:" + " " + furniture[i].materials + " " + "|" +
                     "Призначення:" + " " + furniture[i].recognition + " " + "|" +
