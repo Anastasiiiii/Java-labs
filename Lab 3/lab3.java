@@ -33,7 +33,17 @@ public class lab3 {
             for (int i = 0; i < arr.length; i++) {
                 System.out.println(arr[i]);
             }
-               
+            
+            for (int i = 0; i <= arr.length - 1; i++) {
+                for (int j = i + 1; j <= arr.length - 1; j++) {
+                    if (arr[i] == arr[j]) {
+                        System.out.println("Речення не можуть бути однакової довжини!");
+                        System.exit(0);
+                    }
+                }
+            }
+                
+                
             for (int i = 0; i <= arr.length - 1; i++) {
                 min = arr[i];
                 index = i;
